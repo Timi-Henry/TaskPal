@@ -381,14 +381,16 @@ export default function App() {
                 Export tasks
               </button>
               <label>
-                Import tasks
-                <input
-                  type="file"
-                  aria-label="Import tasks"
-                  accept=".json,application/json"
-                  disabled={status === "loading"}
-                  onChange={(event) => void handleImport(event)}
-                />
+                <u>
+                  Import tasks
+                  <input
+                    type="file"
+                    aria-label="Import tasks"
+                    accept=".json,application/json"
+                    disabled={status === "loading"}
+                    onChange={(event) => void handleImport(event)}
+                  />
+                </u>
               </label>
             </div>
             {backupMessage && <p role="status">{backupMessage}</p>}
