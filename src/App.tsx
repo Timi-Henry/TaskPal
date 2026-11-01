@@ -76,9 +76,9 @@ export default function App() {
         {/* Brand */}
         <header className="taskpal-brand flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Sparkles size={21} strokeWidth={1.8} className="text-[#25473b]" />
+            <Sparkles size={32} strokeWidth={1.8} className="text-[#c97743]" />
 
-            <span className="text-[22px] font-bold tracking-[-0.8px]">
+            <span className="text-[32px] font-bold tracking-[-0.8px]">
               TaskPal
               <span className="text-[#c97743]">.</span>
             </span>
@@ -108,7 +108,7 @@ export default function App() {
           <div className="flex items-center justify-between">
             <span className="text-[10px] tracking-[0.7px] text-[#535b50]">TODAY'S PROGRESS</span>
 
-            <span className="text-[13px] font-semibold text-[#9b4f28]">{progress}%</span>
+            <span className="text-[13px] font-semibold text-[#c97743]">{progress}%</span>
           </div>
 
           <p className="mt-3 flex items-baseline gap-1.5 text-[13px] text-[#535b50]">

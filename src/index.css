@@ -40,7 +40,7 @@ button {
 
 button:focus-visible,
 input:focus-visible {
-  outline: 2px solid #9b4f28;
+  outline: 2px solid #c97743;
   outline-offset: 3px;
 }
 
@@ -211,7 +211,7 @@ input:focus-visible {
   color: #62665b;
 }
 .task-input[aria-invalid="true"] {
-  border-color: #a93620;
+  border-color: #c97743;
 }
 
 .task-add {
@@ -295,8 +295,8 @@ input:focus-visible {
 }
 .task-detail-panel::backdrop {
   background: transparent;
-  backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
 }
 .task-detail-header {
   display: flex;
@@ -370,7 +370,7 @@ input:focus-visible {
   }
 
   .taskpal-brand > div > span {
-    font-size: 26px;
+    font-size: 32px;
   }
 
   .taskpal-hero {
