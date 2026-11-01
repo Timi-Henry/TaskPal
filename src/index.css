@@ -221,7 +221,7 @@ input:focus-visible {
   justify-content: center;
   gap: 6px;
   border-radius: 12px;
-  background: #9b4f28;
+  background: #c97743;
   padding-inline: 16px;
   font-size: 13px;
   font-weight: 600;
@@ -282,7 +282,7 @@ input:focus-visible {
   border-radius: 18px;
   background-color: #f3f0e7;
   background-image:
-    linear-gradient(rgba(243, 240, 231, 0.55), rgba(243, 240, 231, 0.55)),
+    linear-gradient(rgba(243, 240, 231, 0.65), rgba(243, 240, 231, 0.65)),
     url("/white-paper-texture.jpg");
   background-size: cover;
   background-position: center;
@@ -295,8 +295,8 @@ input:focus-visible {
 }
 .task-detail-panel::backdrop {
   background: transparent;
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 .task-detail-header {
   display: flex;

@@ -95,12 +95,10 @@ export default function App() {
               Get More Done
             </span>
 
-            <span className="font-hero-bottom text-[36px] font-light italic leading-[1.1] tracking-normal text-[#9b4f28] sm:text-[50px]">
+            <span className="font-hero-bottom text-[36px] font-light italic leading-[1.1] tracking-normal text-[#c97743] sm:text-[50px]">
               With TaskPal.
             </span>
           </h1>
-
-          <p className="mt-4 text-[13px] leading-7 text-[#535b50]">Got things to do? Start here.</p>
         </section>
 
         <section
