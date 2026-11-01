@@ -174,7 +174,7 @@ export default function App() {
               Today's <em>tasks.</em>
             </h2>
 
-            <span className="text-[10px] tracking-wide text-[#535b50]">{tasks.length} TOTAL</span>
+            <span className="text-[12px] tracking-wide text-[#000000]">{tasks.length} TOTAL</span>
           </div>
 
           <ul className="space-y-3">
