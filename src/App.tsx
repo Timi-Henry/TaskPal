@@ -137,6 +137,8 @@ export default function App() {
 
         <form onSubmit={handleAddTask} className="taskpal-entry mt-4.5 flex gap-2">
           <input
+            id="new-task"
+            name="taskTitle"
             ref={inputRef}
             type="text"
             value={title}
