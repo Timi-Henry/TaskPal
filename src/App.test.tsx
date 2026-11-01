@@ -25,6 +25,7 @@ async function add(title: string) {
   fireEvent.change(screen.getByRole("textbox", { name: "New task" }), { target: { value: title } });
   fireEvent.click(screen.getByRole("button", { name: "Add" }));
   await screen.findByText(title.trim(), { selector: ".task-title" });
+  await waitFor(() => expect(screen.getByRole("textbox", { name: "New task" })).toHaveFocus());
 }
 
 describe("TaskPal task interactions", () => {
@@ -42,10 +43,12 @@ describe("TaskPal task interactions", () => {
   it("trims a title, toggles completion and updates the accessible progress value", async () => {
     await start();
     await add("  Finish the assessment  ");
+    expect(screen.getByRole("status")).toHaveTextContent("Task added.");
     const toggle = screen.getByRole("button", { name: "Mark Finish the assessment complete" });
     fireEvent.click(toggle);
     await waitFor(() => expect(toggle).toHaveAttribute("aria-pressed", "true"));
     expect(screen.getByRole("progressbar")).toHaveAttribute("aria-valuenow", "100");
+    expect(screen.getByRole("status")).toHaveTextContent("Task completed.");
   });
 
   it("opens the complete unlimited title in the detail dialog", async () => {

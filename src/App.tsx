@@ -9,6 +9,7 @@ import {
 import { Check, Plus, Sparkles, Trash2 } from "lucide-react";
 import ShaderBackground from "./components/ShaderBackground";
 import TaskDetailsDialog from "./components/TaskDetailsDialog";
+import AnnouncementToast from "./components/AnnouncementToast";
 import { useSavedTasks, type Task } from "./useSavedTasks";
 import { createTaskBackup, parseTaskBackup } from "./taskStorage";
 
@@ -62,7 +63,7 @@ export default function App() {
 
   useEffect(() => {
     if (!undo) return;
-    const timer = setTimeout(() => setUndo(null), 8000);
+    const timer = setTimeout(() => setUndo(null), 5000);
     return () => clearTimeout(timer);
   }, [undo]);
 
@@ -107,7 +108,11 @@ export default function App() {
   }
 
   function handleToggleTask(id: string) {
-    void toggleTask(id);
+    const task = tasks.find((current) => current.id === id);
+    if (!task) return;
+    void toggleTask(id).then(() => {
+      announce(task.completed ? "Task marked incomplete." : "Task completed.");
+    });
   }
 
   function handleDeleteTask(id: string) {
@@ -122,7 +127,7 @@ export default function App() {
     };
     void deleteTask(id).then(() => {
       setUndo({ task, index, anchors });
-      announce("Task deleted. Undo is available for eight seconds.");
+      announce("Task deleted. Undo is available for five seconds.");
     });
   }
 
@@ -400,10 +405,8 @@ export default function App() {
             <a href="/privacy.html">Data &amp; Privacy</a>
           </nav>
         </footer>
-        <p className="sr-only" role="status">
-          <span key={announcement.id}>{announcement.message}</span>
-        </p>
       </div>
+      <AnnouncementToast announcement={announcement} />
       <TaskDetailsDialog text={selectedTask?.title ?? null} onClose={() => setSelectedTask(null)} />
     </main>
   );
