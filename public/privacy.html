@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f3f0e7" />
+    <meta
+      name="description"
+      content="Understand TaskPal’s browser-local task storage, downloaded backups, Google Fonts requests and current approach to analytics."
+    />
+    <link rel="canonical" href="https://task-pal-eight.vercel.app/privacy.html" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Newsreader:opsz,wght@6..72,400&amp;display=swap"
+    />
+    <link rel="stylesheet" href="/info.css" />
+    <title>Privacy and browser storage — TaskPal</title>
+  </head>
+  <body>
+    <main>
+      <nav aria-label="Main navigation">
+        <a href="/">Open TaskPal</a>
+      </nav>
+      <h1>Your tasks stay in this browser.</h1>
+      <p>
+        TaskPal’s task-saving feature uses storage in your browser profile. The app does not send
+        your task titles or completion states to a task server. It has no account-based
+        synchronization or cloud task backup.
+      </p>
+      <h2>Local storage is not a private vault</h2>
+      <p>
+        Someone using the same browser profile may be able to see your tasks. Browser extensions and
+        scripts running with access to this site may also access local data. TaskPal does not
+        provide an encrypted vault. Do not treat the task list as a place to store passwords or
+        other secrets.
+      </p>
+      <h2>Retention and backups</h2>
+      <p>
+        Clearing this site’s browser data removes its saved tasks. Private browsing, browser cleanup
+        and storage limits can affect how long data remains. Deleting a task updates the saved list
+        when saving succeeds. Exported backup files stay on your device until you remove them, and
+        they contain your task text.
+      </p>
+      <h2>Fonts and hosting</h2>
+      <p>
+        This site loads its typefaces from Google Fonts. Your browser contacts Google’s font
+        services, which receive the network information needed to serve those files. Task titles are
+        not included in the font URLs. The site is hosted on Vercel; ordinary site requests are
+        handled by that hosting service.
+      </p>
+      <h2>Analytics</h2>
+      <p>
+        This version of the application does not include a visitor-analytics SDK, advertising pixel
+        or session-replay script. No task-content tracking has been added. Hosting infrastructure
+        may still maintain operational request logs; this page does not make claims about settings
+        outside the application.
+      </p>
+      <h2>Your choices</h2>
+      <p>
+        Use a browser profile you trust, export backups for important tasks, and clear this site’s
+        data when you want to remove its local list. Use Backup &amp; storage on the task page to
+        download or import a task backup.
+      </p>
+      <footer><a href="/">Return to TaskPal</a> · Updated 1 November 2026</footer>
+    </main>
+  </body>
+</html>

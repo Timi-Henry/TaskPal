@@ -1,0 +1,13 @@
+# TaskPal
+
+> TaskPal is a browser-local task manager for creating, completing, deleting and reading tasks without an account.
+
+## Public information
+
+- [TaskPal](https://task-pal-eight.vercel.app/): The task application.
+- [How To Use TaskPal](https://task-pal-eight.vercel.app/help.html): Task controls, long text, saving and backups.
+- [Data & Privacy](https://task-pal-eight.vercel.app/privacy.html): Browser-local data, downloaded backups, fonts and analytics.
+
+## Product limits
+
+Tasks belong to a browser profile on this site. There is no account-based cloud backup or automatic cross-device sync. Browser storage is not an encrypted vault. Personal task content is not public site content and must not be requested for discovery or indexing.
