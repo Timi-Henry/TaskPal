@@ -71,10 +71,10 @@ export default function App() {
   }
 
   return (
-    <main className="min-h-screen bg-transparent px-4 py-7 sm:px-6 sm:py-10">
-      <div className="mx-auto w-full max-w-162.5">
+    <main className="taskpal-page min-h-screen bg-transparent px-4 py-7 sm:px-6 sm:py-10">
+      <div className="taskpal-layout mx-auto w-full max-w-162.5">
         {/* Brand */}
-        <header className="flex items-center justify-between">
+        <header className="taskpal-brand flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Sparkles size={21} strokeWidth={1.8} className="text-[#25473b]" />
 
@@ -85,8 +85,7 @@ export default function App() {
           </div>
         </header>
 
-        {/* Hero */}
-        <section className="mt-12 sm:mt-16">
+        <section className="taskpal-hero mt-12 sm:mt-16">
           <p className="mb-3 text-[10px] font-bold tracking-[1.8px] text-[#535b50]">
             YOUR GO-TO TASK MANAGER
           </p>
@@ -104,10 +103,9 @@ export default function App() {
           <p className="mt-4 text-[13px] leading-7 text-[#535b50]">Got things to do? Start here.</p>
         </section>
 
-        {/* Progress card */}
         <section
           aria-label="Today's progress"
-          className="mt-7 rounded-2xl border border-[#e3dfd3] bg-[#fffdf7] p-4.5 shadow-[0_5px_20px_#5b513212]"
+          className="taskpal-progress mt-7 rounded-2xl border border-[#e3dfd3] bg-[#fffdf7] p-4.5 shadow-[0_5px_20px_#5b513212]"
         >
           <div className="flex items-center justify-between">
             <span className="text-[10px] tracking-[0.7px] text-[#535b50]">TODAY'S PROGRESS</span>
@@ -136,8 +134,8 @@ export default function App() {
             />
           </div>
         </section>
-        {/* Add task */}
-        <form onSubmit={handleAddTask} className="mt-4.5 flex gap-2">
+
+        <form onSubmit={handleAddTask} className="taskpal-entry mt-4.5 flex gap-2">
           <input
             ref={inputRef}
             type="text"
@@ -170,8 +168,7 @@ export default function App() {
           </p>
         )}
 
-        {/* Tasks */}
-        <section className="mt-8">
+        <section className="taskpal-tasks mt-8">
           <div className="mb-4 flex items-center justify-between">
             <h2 className="font-display text-[34px] leading-tight text-[#272d27]">
               Today's <em>tasks.</em>
@@ -183,7 +180,6 @@ export default function App() {
           <ul className="space-y-3">
             {tasks.map((task) => (
               <li key={task.id} className="task-card cutting-mat">
-                {/* Shader stays behind the delete button */}
                 {storageMessage && (
                   <p role="alert" className="mt-3 text-sm text-[#a93620]">
                     {storageMessage}

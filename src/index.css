@@ -348,3 +348,149 @@ input:focus-visible {
   animation: none !important;
   transition: none !important;
 }
+
+@media (min-width: 1024px) {
+  .taskpal-page {
+    padding: 44px 48px 64px;
+  }
+
+  .taskpal-layout {
+    display: grid;
+    grid-template-columns: minmax(340px, 0.85fr) minmax(0, 1.3fr);
+    grid-template-rows: repeat(7, max-content) minmax(0, 1fr);
+    column-gap: clamp(40px, 4.5vw, 72px);
+    max-width: 1180px;
+    align-items: start;
+  }
+
+  .taskpal-brand {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    margin-bottom: 56px;
+  }
+
+  .taskpal-brand > div > span {
+    font-size: 26px;
+  }
+
+  .taskpal-hero {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0 0 32px;
+  }
+
+  .taskpal-hero > p:first-child {
+    font-size: 11px;
+  }
+
+  .taskpal-hero .font-hero-top {
+    font-size: clamp(32px, 2.8vw, 40px);
+    line-height: 1.3;
+    letter-spacing: 0.04em;
+  }
+
+  .taskpal-hero .font-hero-bottom {
+    font-size: clamp(44px, 3.8vw, 56px);
+    line-height: 1.1;
+  }
+
+  .taskpal-hero > p:last-child {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .taskpal-progress {
+    grid-column: 1;
+    grid-row: 3;
+    margin: 0 0 24px;
+    padding: 24px;
+  }
+
+  .taskpal-progress > p {
+    font-size: 14px;
+  }
+
+  .taskpal-progress > p > span {
+    font-size: 48px;
+  }
+
+  .taskpal-entry {
+    grid-column: 1;
+    grid-row: 4;
+    margin: 0 0 10px;
+  }
+
+  .taskpal-entry .task-input {
+    min-height: 52px;
+  }
+
+  .taskpal-entry .task-add {
+    padding-inline: 20px;
+    font-size: 14px;
+  }
+
+  .taskpal-layout > #task-help {
+    grid-column: 1;
+    grid-row: 5;
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .taskpal-layout > [role="alert"] {
+    grid-column: 1;
+    margin-top: 10px;
+  }
+
+  .taskpal-tasks {
+    grid-column: 2;
+    grid-row: 2 / -1;
+    min-width: 0;
+    margin: 0;
+  }
+
+  .taskpal-tasks > div:first-child {
+    margin-bottom: 22px;
+  }
+
+  .taskpal-tasks h2 {
+    font-size: 40px;
+  }
+
+  .taskpal-tasks > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .taskpal-tasks > ul > li {
+    margin-block: 0;
+  }
+
+  .taskpal-tasks .task-title {
+    font-size: 15px;
+  }
+
+  .taskpal-tasks > .border-dashed {
+    padding: 64px 24px;
+  }
+
+  .task-detail-panel {
+    width: min(860px, calc(100vw - 96px));
+    height: min(760px, calc(100dvh - 96px));
+    max-height: calc(100dvh - 96px);
+  }
+
+  .task-detail-header {
+    padding: 20px 28px;
+  }
+
+  .task-detail-body {
+    padding: 28px;
+  }
+
+  .task-detail-body p {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+}
