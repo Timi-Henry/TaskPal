@@ -271,9 +271,9 @@ input:focus-visible {
 }
 
 .task-detail-panel {
-  width: min(820px, calc(100vw - 24px));
+  width: min(500px, calc(100vw - 24px));
   max-width: none;
-  height: min(920px, calc(100dvh - 24px));
+  height: min(350px, calc(100dvh - 24px));
   max-height: calc(100dvh - 24px);
   margin: auto;
   padding: 0;
