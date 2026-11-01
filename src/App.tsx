@@ -76,9 +76,9 @@ export default function App() {
         {/* Brand */}
         <header className="taskpal-brand flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Sparkles size={32} strokeWidth={1.8} className="text-[#c97743]" />
+            <Sparkles size={29} strokeWidth={1.8} className="text-[#263b31]" />
 
-            <span className="text-[32px] font-bold tracking-[-0.8px]">
+            <span className="text-[29px] font-bold tracking-[-0.8px]">
               TaskPal
               <span className="text-[#c97743]">.</span>
             </span>

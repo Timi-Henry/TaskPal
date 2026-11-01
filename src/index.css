@@ -376,7 +376,7 @@ input:focus-visible {
   .taskpal-hero {
     grid-column: 1;
     grid-row: 2;
-    margin: 0 0 32px;
+    margin: 0 0 29px;
   }
 
   .taskpal-hero > p:first-child {
