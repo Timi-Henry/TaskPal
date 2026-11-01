@@ -26,7 +26,7 @@ body {
 
   background-color: #f3f0e7;
   background-image:
-    linear-gradient(rgba(243, 240, 231, 0.88), rgba(243, 240, 231, 0.88)),
+    linear-gradient(rgba(243, 240, 231, 0.55), rgba(243, 240, 231, 0.55)),
     url("/white-paper-texture.jpg");
 
   background-size: cover;
@@ -282,7 +282,7 @@ input:focus-visible {
   border-radius: 18px;
   background-color: #f3f0e7;
   background-image:
-    linear-gradient(rgba(243, 240, 231, 0.88), rgba(243, 240, 231, 0.88)),
+    linear-gradient(rgba(243, 240, 231, 0.55), rgba(243, 240, 231, 0.55)),
     url("/white-paper-texture.jpg");
   background-size: cover;
   background-position: center;
